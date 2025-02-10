@@ -5,3 +5,6 @@ services:
       - .env.local
     tty: true
     stdin_open: true
+    network_mode: "host"
+    volumes:
+      - ./output:/app/output

@@ -28,6 +28,10 @@ export const o3MiniModel = openai(
   },
 );
 
+export const deepseekR1 = openai('llama3.2:latest', {
+  structuredOutputs: true,
+});
+
 const MinChunkSize = 140;
 const encoder = getEncoding('o200k_base');
 
